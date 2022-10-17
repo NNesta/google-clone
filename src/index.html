@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="icon" class="object-contain" href="../image/gsa_super_g-64.gif" type="image/icon type">
+<title>Google</title>
+
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <link
       rel="stylesheet"
@@ -12,64 +15,66 @@
     />
     <link href="/dist/output.css" rel="stylesheet" />
   </head>
-  <body class="relative h-screen font-[Roboto]">
-    <nav class="w-full flex gap-8 p-4 text-xs justify-end items-center">
+  <body class="relative h-screen container font-[Roboto] text-[0.5rem] md:text-base w-full ">
+    <nav class="w-full flex gap-2 lg:gap-8 p-1 lg:p-4  justify-end items-center">
       <a class="hover:underline" href="/">Gmail</a>
       <a class="hover:underline" href="/">Images</a>
       <div class="hover:bg-gray-100 p-1 rounded-full">
-      <svg class="gb_Ue h-6 " focusable="false" viewBox="0 0 24 24">
+      <svg class="gb_Ue h-3 lg:h-6 " focusable="false" viewBox="0 0 24 24">
         <path
           d="M6,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM16,6c0,1.1 0.9,2 2,2s2,-0.9 2,-2 -0.9,-2 -2,-2 -2,0.9 -2,2zM12,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2z"
         ></path>
       </svg></div>
       <div class="hover:bg-gray-100 p-1 rounded-full">
       <img
-        class="h-8 rounded-full"
+        class="h-4 lg:h-8 rounded-full"
         src="https://lh3.googleusercontent.com/ogw/AOh-ky1NHTAUFnai-zTmcO6Rsy0YYjrWXaghgfmmp4oB=s64-c-mo"
         alt=""
       /></div>
+     </div>
     </nav>
-    <div class="w-full max-w-[40%] mx-auto flex flex-col gap-4">
+    <div class="w-full max-w-full mx-auto flex flex-col gap-4 pt-16">
       <img
-        class="h-32 object-contain"
-        src="/image/google-removebg-preview.png"
+        class="object-contain h-8 lg:h-16"
+        src="/image/google-lg.png"
         alt=""
       />
+     
       <div
-        class="flex items-center justify-between bg-white border-[1px] rounded-full border-gray-200 hover:shadow-xl shadow- h-[40px] px-2"
+        class="flex items-center w-[586px] max-w-[70%] mx-auto justify-between bg-white border-[1px] rounded-full border-gray-200 hover:shadow-xl shadow- h-[40px] px-2"
       >
         <span class="material-symbols-outlined h-6 m-auto text-gray-400">
           search
         </span>
         
-        <input class="mx-2 h-6 w-full outline-none" type="text" name="" id="" />
+        <input class="mx-2 h-4 lg:h-6 w-full outline-none" type="text" name="" id="" />
         <img
           class="h-8 object-cover"
           src="/image/voice-removebg-preview.png"
           alt=""
         />
       </div>
-      <div class="grid grid-cols-2 max-w-[70%] mx-auto gap-4 justify-center w-full items-center h-12">
+      <div class="flex  mx-auto gap-4 justify-center items-center h-12">
         <div class=""><button
-          class="bg-gray-50 hover:border-[1px] border-gray-200 px-4 py-2 rounded-lg w-fit"
+          class="bg-gray-50 hover:border-gray-200 border border-gray-50  px-4 py-2 rounded-lg w-fit whitespace-nowrap"
         >
           Google Search
         </button></div>
         <div class=""><button
-          class="bg-gray-50 hover:border-[1px] border-gray-200 px-4 py-2 rounded-lg"
+          class="bg-gray-50 hover:border-gray-200  border  border-gray-50 px-4 py-2 rounded-lg whitespace-nowrap"
         >
           I am Feeling Lucky
         </button></div>
         
       </div>
-      <div class="flex mx-auto items-center gap-4">
-        <p>Google offered in:</p>
+      <div class="flex mx-auto items-center gap-4 max-w-sm">
+        <p class="whitespace-nowrap">Google offered in:</p>
         <a class="text-blue-700" href="/">Français</a>
         <a class="text-blue-700" href="/">Kiswahili</a>
         <a class="text-blue-700" href="/">Ikinyarwanda</a>
       </div>
     </div>
-    <footer class="absolute bottom-0 inset-x-0 bg-gray-50 text-gray-600 text-sm">
+    <footer class="absolute bottom-0 inset-x-0 bg-gray-50 text-gray-600 text-sm hidden lg:block">
       <div class="flex py-2 px-8 border-b-[1px] border-gray-200">
         <p>Rwanda</p>
       </div>
