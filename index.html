@@ -15,23 +15,51 @@
     />
     <link href="./dist/output.css" rel="stylesheet" />
   </head>
-  <body class="relative flex flex-col gap-8 h-screen font-[Roboto] text-[0.3rem] md:text-base text-gray-600 w-full ">
-    <nav class="w-full flex gap-2 lg:gap-8 p-1 lg:p-4  justify-end items-center">
+  <body class="relative flex flex-col gap-8 h-screen font-[Roboto] text-primary-color text-base-sm w-full">
+    <nav class="hidden w-full sm:flex gap-2 lg:gap-8 p-1 lg:p-4  justify-end items-center">
+      
       <a class="hover:underline" href="/">Gmail</a>
       <a class="hover:underline" href="/">Images</a>
-      <div class="hover:bg-gray-100 inline-flex rounded-full h-3 W-3 lg:h-10 object-center items-center justify-center lg:w-10">
-        <span class="material-symbols-outlined object-contain">
+      <div class="hover:bg-gray-100 inline-flex rounded-full h-9 w-9 object-center items-center justify-center">
+        <span class="material-symbols-outlined object-contain ">
           apps
           </span>
       </div>
-      <div class="hover:bg-gray-100 p-1 rounded-full">
+      <button class="hover:bg-gray-100 p-1 rounded-full ">
       <img
         class="h-4 lg:h-8 rounded-full"
         src="https://lh3.googleusercontent.com/ogw/AOh-ky1NHTAUFnai-zTmcO6Rsy0YYjrWXaghgfmmp4oB=s64-c-mo"
         alt=""
-      /></div>
+      /></button>
      </div>
     </nav>
+   <nav class="flex sm:hidden justify-between items-center m-2 ">
+    <div class="flex gap-4 items-center text-semibold">
+      <button class=""><span class="material-symbols-outlined p-2">
+        menu
+        </span></button>
+     <a href="" class="text-secondary-color underline decoration-secondary-color underline-offset-8">
+      ALL
+     </a>
+     <a href="">
+      IMAGES
+     </a>
+    </div>
+    <div class="flex gap-4 items-center">
+      <a href="" class="hover:bg-gray-100 inline-flex rounded-full h-6 w-6 object-center items-center justify-center">
+        <span class="material-symbols-outlined">
+          apps
+          </span>
+      </a>
+      <button class="hover:bg-gray-100 p-1 rounded-full ">
+        <img
+          class="h-4 lg:h-8 rounded-full"
+          src="https://lh3.googleusercontent.com/ogw/AOh-ky1NHTAUFnai-zTmcO6Rsy0YYjrWXaghgfmmp4oB=s64-c-mo"
+          alt=""
+        /></button>
+    </div>
+
+   </nav>
     <div class="w-full max-w-full mx-auto flex-1 flex flex-col gap-6 pt-16 sm:pt-32 md:pt-24 lg:pt-0 xl:pt-0">
       <img
         class="object-contain h-8 lg:h-[5.5rem]"
@@ -40,40 +68,58 @@
       />
      
       <div
-        class="flex items-center w-[586px]  max-w-[70%] mx-auto justify-between bg-white border-[1px] rounded-full border-gray-200 hover:shadow-xl h-[30px] lg:h-[45px] px-2"
+        class="flex items-center w-[586px] max-w-[90%] mx-auto justify-between bg-white border-2 rounded-full border-gray-200 hover:shadow-md h-[45px] px-2"
       >
         <span class="material-symbols-outlined h3 lg:h-6 m-auto text-gray-400">
           search
         </span>
         
-        <input class="mx-2 h-4  lg:h-8 w-full outline-none" type="text" name="" id="" />
-        <img
-          class="h-4 lg:h-8 object-cover"
-          src="/image/voice-removebg-preview.png"
-          alt=""
-        />
+        <input class="mx-2 h-8 w-full outline-none flex-1" type="text" name="" id="" />
+      <img class="hidden lg:block h-6" src="/image/micro.svg" alt="">
+        <img class="Gdd5U h-3 lg:h-6 hidden lg:block pl-4" src="image/camera-removebg-preview.png" alt="Camera search" data-atf="1" data-frt="0">
       </div>
-      <div class="flex  mx-auto gap-1 lg:gap-4 justify-center items-center h-12">
-        <div class=""><button
-          class="bg-gray-50 hover:border-gray-200 border border-gray-50  px-4 py-2 rounded-md w-fit whitespace-nowrap"
+      <div class="hidden sm:flex  mx-auto gap-1 lg:gap-4 justify-center items-center h-12">
+        <button
+          class="bg-gray-100 hover:bg-gray-50 hover:border-gray-200 border border-gray-50  px-4 py-2 rounded-md w-fit whitespace-nowrap"
         >
           Google Search
-        </button></div>
-        <div class=""><button
-          class="bg-gray-50 hover:border-gray-200  border  border-gray-50 px-4 py-2 rounded-md whitespace-nowrap"
+        </button>
+        <button
+          class="bg-gray-100 hover:bg-gray-50 hover:border-gray-200  border  border-gray-50 px-4 py-2 rounded-md whitespace-nowrap"
         >
           I am Feeling Lucky
-        </button></div>
+        </button>
         
       </div>
-      <div class="flex mx-auto items-center gap-1 lg:gap-4 max-w-full ">
+      <div class="flex mx-auto items-center gap-4 max-w-full ">
         <p class="whitespace-nowrap">Google offered in:</p>
-        <a class="text-blue-800 hover:underline" href="/">Français</a>
-        <a class="text-blue-800 hover:underline" href="/">Kiswahili</a>
-        <a class="text-blue-800 hover:underline" href="/">Ikinyarwanda</a>
-      </div>
+        <ul class="flex items-center gap-4 text-secondary-color-dark">
+       <li><a class="hover:underline" href="/">Français</a></li> 
+       <li><a class="hover:underline" href="/">Kiswahili</a></li>
+        <li><a class="hover:underline" href="/">Ikinyarwanda</a></li>
+        
+      </ul></div>
     </div>
-    <footer class="w-full bg-gray-100 ">
+    <footer class="flex flex-col gap-8 sm:hidden w-full bg-gray-100 ">
+      <div class="flex py-2 px-8 border-gray-300 border-b">
+        <p>Rwanda</p>
+      </div>
+      <div class="flex flex-col py-2 gap-4 border-gray-200 border-t">
+        <ul class="flex gap-4 justify-center">
+          <li class="hover:underline cursor-pointer"><a>About</a></li>
+          <li class="hover:underline cursor-pointer"><a>Advertising</a></li>
+          <li class="hover:underline cursor-pointer"><a>Business</a></li>
+          <li class="hover:underline cursor-pointer"><a>How Search works</a></li>
+        </ul>
+        
+        <ul class="flex gap-4 justify-center item-center">
+          <li class="hover:underline cursor-pointer"><a href="">Privacy</a></li>
+          <li class="hover:underline cursor-pointer"><a href="">Terms</a></li>
+          <li class="hover:underline cursor-pointer"><a href="">Settings</a></li>
+        </ul>
+      </div>
+    </footer>
+    <footer class="hidden sm:block w-full bg-gray-100 ">
       <div class="flex py-2 px-8 border-b-[1px] border-gray-200">
         <p>Rwanda</p>
       </div>
@@ -84,6 +130,7 @@
           <p class="hover:underline cursor-pointer">Business</p>
           <p class="hover:underline cursor-pointer">How Search works</p>
         </div>
+        
         <div class="flex gap-4">
           <p class="hover:underline cursor-pointer">Privacy</p>
           <p class="hover:underline cursor-pointer">Terms</p>
